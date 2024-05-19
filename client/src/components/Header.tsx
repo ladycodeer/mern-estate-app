@@ -22,17 +22,20 @@ export default function Header() {
         </form>
         <ul className="flex gap-4">
           <Link to="/">
-            <li className="hidden sm:inline text-slate-700 hover:underline">
+            <li className="hidden sm:inline text-slate-700 hover:underline hover:text-yellow-500">
               AnaSayfa
             </li>
           </Link>
           <Link to="/about">
-            <li className="hidden sm:inline text-slate-700 hover:underline">
+            <li className="hidden sm:inline text-slate-700 hover:underline hover:text-yellow-500">
               Hakkında
             </li>
           </Link>
           <Link to="/sign-in">
-            <li className=" text-slate-700 hover:underline"> Giriş</li>
+            <li className=" text-slate-700 hover:underline hover:text-yellow-500">
+              {" "}
+              Giriş
+            </li>
           </Link>
         </ul>
       </div>

@@ -66,7 +66,7 @@ export default function SignIn() {
           disabled={loading}
           className="bg-yellow-500 text-white p-3 rounded-lg uppercase hover:opacity-95 disabled:opacity-80"
         >
-          {loading ? "Loading..." : "Giriş Yap"}
+          {loading ? "Yükleniyor..." : "Giriş Yap"}
         </button>
         <OAuth />
       </form>

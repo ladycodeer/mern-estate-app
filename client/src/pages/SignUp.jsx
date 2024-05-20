@@ -1,5 +1,6 @@
 import { Link , useNavigate} from 'react-router-dom'
 import { useState } from 'react'
+import OAuth from '../components/OAuth';
 
 
 export default function SignUp() {
@@ -49,6 +50,7 @@ export default function SignUp() {
         <input type="email" placeholder='email' className='border p-3 rounded-lg' id='email' onChange={handleChange} />
         <input type="password" placeholder='password' className='border p-3 rounded-lg' id='password' onChange={handleChange}/>
         <button disabled={loading}  className='bg-yellow-500 text-white p-3 rounded-lg uppercase hover:opacity-95 disabled:opacity-80'>{loading? 'Loading...': 'Kayıt Ol'}</button>
+        <OAuth/>
       </form>
       <div className="flex gap-2 mt-5">
         <p>Zaten hesabın var mı?</p>

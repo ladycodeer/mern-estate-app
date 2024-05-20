@@ -7,6 +7,7 @@ import {
   signInFailure,
   signInSuccess,
 } from "../redux/user/userSlice";
+import OAuth from "../components/OAuth";
 interface RootState {
   user: {
     loading: boolean;
@@ -74,6 +75,7 @@ export default function SignIn() {
         >
           {loading ? "Loading..." : "Giriş Yap"}
         </button>
+        <OAuth />
       </form>
       <div className="flex gap-2 mt-5">
         <p>Kayıtlı değil misin?</p>

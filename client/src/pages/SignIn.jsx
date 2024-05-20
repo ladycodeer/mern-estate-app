@@ -1,24 +1,17 @@
-import React from "react";
+
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { useDispatch, UseDispatch, useSelector } from "react-redux";
+import {  useDispatch, useSelector } from "react-redux";
 import {
   signInStart,
   signInFailure,
   signInSuccess,
 } from "../redux/user/userSlice";
 import OAuth from "../components/OAuth";
-interface RootState {
-  user: {
-    loading: boolean;
-    error: string | null;
-    // Add other properties of 'user' here
-  };
-  // Add other slices of state here
-}
+
 export default function SignIn() {
   const [formData, setFormData] = useState({});
-  const { loading, error } = useSelector((state: RootState) => state.user);
+  const { loading, error } = useSelector((state) => state.user);
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const handleChange = (e) => {

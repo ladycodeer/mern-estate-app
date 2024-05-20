@@ -1,4 +1,4 @@
-// eslint-disable-next-line no-unused-vars
+
 import { GoogleAuthProvider, getAuth, signInWithPopup } from 'firebase/auth';
 import { app } from '../firebase';
 import { useDispatch } from 'react-redux';

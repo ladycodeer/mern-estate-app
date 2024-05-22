@@ -19,6 +19,8 @@ import {
 
 } from '../redux/user/userSlice';
 import { useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
+
 
 export default function Profile() {
   const fileRef = useRef(null);
@@ -182,6 +184,10 @@ export default function Profile() {
         <button disabled={loading}  className='bg-yellow-500 text-white rounded-lg p-3 uppercase hover:opacity-95 disabled:opacity-80'>
         {loading ? 'Yükleniyor...' : 'Güncelle'}
         </button>
+        <Link className='bg-slate-700 text-white p-3 rounded-lg uppercase text-center hover:opacity-95' to={"/create-listing"}>
+
+        İlan Oluştur
+        </Link>
       </form>
       <div className="flex justify-between mt-5">
         <span onClick={handleDeleteUser} className='text-slate-500 cursor-pointer'>Hesabı Sil</span>

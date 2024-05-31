@@ -11,15 +11,10 @@ import UpdateListing from './pages/UpdateListing';
 import Listing from './pages/Listing';
 import Search from './pages/Search';
 
-
-
-
-
-
 export default function App() {
   return (
     <BrowserRouter>
-<Header/>
+      <Header/>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/sign-in' element={<SignIn />} />
@@ -35,7 +30,6 @@ export default function App() {
             element={<UpdateListing />}
           />
         </Route>
-
       </Routes>
     </BrowserRouter>
   );

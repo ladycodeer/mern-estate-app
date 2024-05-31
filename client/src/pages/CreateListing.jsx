@@ -283,7 +283,7 @@ export default function CreateListing() {
               <div className='flex flex-col items-center'>
                 <p>Fiyat</p>
                 {formData.type === 'rent' && (
-                  <span className='text-xs'>($ / month)</span>
+                  <span className='text-xs'>($ / aylık)</span>
                 )}
               </div>
             </div>
@@ -302,7 +302,7 @@ export default function CreateListing() {
                 <div className='flex flex-col items-center'>
                   <p>İndirimli fiyat</p>
                   {formData.type === 'rent' && (
-                    <span className='text-xs'>($ / month)</span>
+                    <span className='text-xs'>($ / aylık)</span>
                   )}
                 </div>
               </div>)}

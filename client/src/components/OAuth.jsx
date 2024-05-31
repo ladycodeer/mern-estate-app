@@ -31,7 +31,7 @@ export default function OAuth() {
       dispatch(signInSuccess(data));
       navigate('/');
     } catch (error) {
-      console.log('could not sign in with google', error);
+      console.log('Google ile giriş yapılamadı', error);
     }
   };
   return (
@@ -40,7 +40,7 @@ export default function OAuth() {
       type='button'
       className='bg-slate-600 text-white p-3 rounded-lg uppercase hover:opacity-95'
     >
-      Continue with google
+      Google ile Giriş Yap
     </button>
   );
 }

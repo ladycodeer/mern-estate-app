@@ -182,7 +182,7 @@ export default function Profile() {
         <p className='text-sm self-center'>
           {fileUploadError ? (
             <span className='text-red-700'>
-              Error Image upload (image must be less than 2 mb)
+             Görsel yükleme hatası (görsel 2 MBden küçük olmalıdır)
             </span>
           ) : filePerc > 0 && filePerc < 100 ? (
             <span className='text-slate-700'>{`Uploading ${filePerc}%`}</span>
@@ -245,7 +245,7 @@ export default function Profile() {
    {userListings && userListings.length > 0 && (
         <div className='flex flex-col gap-4'>
           <h1 className='text-center mt-7 text-2xl font-semibold'>
-            Your Listings
+            İlanların
           </h1>
           {userListings.map((listing) => (
             <div
@@ -271,10 +271,10 @@ export default function Profile() {
                   onClick={() => handleListingDelete(listing._id)}
                   className='text-red-700 uppercase'
                 >
-                  Delete
+                  Sil
                 </button>
                 <Link to={`/update-listing/${listing._id}`}>
-                  <button className='text-green-700 uppercase'>Edit</button>
+                  <button className='text-green-700 uppercase'>Güncelle</button>
                 </Link>              </div>
             </div>
           ))}
